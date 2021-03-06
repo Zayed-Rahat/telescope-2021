@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Robo Mechatronics Association</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="RMA.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<!--Logo Section-->
+
+		<header class="float-left">
+			<div class="logo img-fluid" style=" background-image: url(logo.png);">
+				<P class="logo_p">Robo Mechatronics Association Bangladesh</P>
+			</div>
+		</header>
+		<!--Button Section-->
+		<h2 class="neon" data-text="Free Registration">Free Registration</h2>
+    <div class="main">
+	  <ul>
+	     <li><button><b>REGISTRATION</b></button></li>
+			<li> <button><b>SUBMIT</b></button> </li>
+
+		</ul>
+		</div>
+		<!--Text Section-->
+
+
+      <div class="banner">
+		  <div class="text">
+
+			<h2 class="text-rma">RMA</h2>
+			<h3>presents</h3>
+
+        <h1 class="text-tele">
+			<span>T</span>
+			<span>E</span>
+			<span>L</span>
+			<span>E</span>
+			<span>S</span>
+			<span>C</span>
+			<span>O</span>
+			<span>P</span>
+			<span>E</span>
+		</h1>
+		    <p class="arti">Call for Articles & Article Writing Competetion <br>Exciting Prize For Winners</p>
+            
+		<br>	<p class="regis"><b>Registration & Submission  : 1-22 March 2021</b></p>
+		  </div>
+       </div>
+
+
+       <!--Typeing Animation Section & Counter-->
+
+		<p class="line anim-typewriter">TIME LEFT..</p>
+
+		<div class="countdownContainer">
+
+			<div class="count">
+				<div class="countd">
+	
+					<span class="info" id="days">120</span>DAYS
+	
+				</div>
+				<div class="countd">
+	
+					<span class="info" id="hours">00</span>HOURS
+	
+				</div>
+				<div class="countd">
+	
+					<span class="info" id="minutes">00</span>MINUTES
+	
+				</div>
+				<div class="countd">
+	
+					<span class="info" id="seconds">00</span>SECONDS
+	
+				</div>
+			</div>
+
+		</div>
+
+  <!--Counter JavaSccript Section-->
+
+		<script type="text/javascript">
+
+			function countdown(){
+				var now = new Date();
+				var eventDate = new Date(2021, 2, 22);
+
+				var currentTiime = now.getTime();
+				var eventTime = eventDate.getTime();
+
+				var remTime = eventTime - currentTiime;
+
+				var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+
+				h %= 24;
+				m %= 60;
+				s %= 60;
+
+				h = (h < 10) ? "0" + h : h;
+				m = (m < 10) ? "0" + m : m;
+				s = (s < 10) ? "0" + s : s;
+
+				document.getElementById("days").textContent = d;
+				document.getElementById("days").innerText = d;
+
+				document.getElementById("hours").textContent = h;
+				document.getElementById("minutes").textContent = m;
+				document.getElementById("seconds").textContent = s;
+
+				setTimeout(countdown, 1000);
+			}
+
+			countdown();
+		</script>
+
+	</body>
+		</html>

@@ -1,0 +1,336 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css2?family=poppins:wght@700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+*{
+    margin: 0 ;
+    padding: 0;
+
+}
+body {
+    background: rgb(21, 21, 32);
+	background-size: cover;
+
+} 
+html{
+
+    font-size: 62.5% ;
+
+}
+  /* logo section  */
+
+  .logo {
+    width: 43rem;
+    height: 14.1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: .4rem
+  }
+  .logo_p {
+    position: absolute;
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 6.8rem;
+    margin-left: 13.9rem;
+  }
+
+  /* button section */
+
+ul{
+	float: right;
+    list-style-type: none;
+    margin-top: -13.5rem;
+    transform: translateX(-4.7rem);
+
+}
+ul li{
+
+display: inline-block;
+
+}
+
+button{
+    position: relative;
+    height: 5.1rem;
+    border: none;
+    outline: none;
+    color: white;
+    background: rgb(21 21 32);
+    cursor: pointer;
+    border-radius: .7rem;
+    font-size: 1.3rem;
+    letter-spacing: .3rem;
+    padding-right: 0.07rem;
+    padding-left: 1.07rem;
+    font-family: 'Raleway', sans-serif;
+}
+  button:before{
+    position: absolute;
+    content: '';
+    top: -.2rem;
+    left: -.2rem;
+    height: calc(100% + .4rem);
+    width: calc(100% + .4rem);
+    border-radius: .5rem;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(.5rem);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animates 20s linear infinite;
+  }
+  button:hover:before{
+    opacity: 1;
+  }
+  button:hover:active{
+    background: none;
+  }
+  button:hover:active:before{
+    filter: blur(.2rem);
+  }
+  @keyframes animates {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+  /* Text Section */
+
+.neon
+{
+    position: absolute;
+    top: 58%;
+    left: 49%;
+    transform: translateX(-50%) translateY(50%);
+    margin: 0;
+    padding: 0 2 rem;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 0.2rem #00ffd5;
+
+}
+
+.neon:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 2 rem;
+    z-index: -1;
+    color: #2196f3;
+    filter: blur(1.5rem);
+
+
+}
+
+.neon:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00ffd5;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(4rem);
+
+}
+.banner{
+	margin: 1 rem auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    width: 50%;
+    top: 17%;
+    left: 24%;
+    position: fixed;
+    color: #fff;
+}
+.arti{
+
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    color: #00ffd5;
+}
+.text-rma{
+
+    font-family: 'Gugi', cursive;
+    font-size: xx-large;
+}
+
+.text-tele{
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  letter-spacing: .1rem;
+  font-size: 6.5rem;
+}
+
+h1 span{
+    animation: animate 2s linear infinite;
+
+}
+@keyframes animate{
+    0%,100%{
+     color: #ff0000;;
+     filter: blur(.2rem);
+     text-shadow:0 0 1rem #00b3ff,
+                 0 0 2rem  #00b3ff,
+                 0 0 4rem  #00b3ff,
+                 0 0 8rem  #00b3ff,
+                 0 0 12rem  #00b3ff,
+                 0 0 20rem  #00b3ff,
+                 0 0 30rem  #00b3ff,
+                 0 0 40rem  #00b3ff,
+
+
+    }
+    5%,95%{
+        color: #b3c6ce;;
+        filter: blur(0rem);
+     text-shadow: 0 0 1rem none;
+
+
+    }
+}
+h1 span:nth-child(1)
+{
+    animation-delay: 0s;
+
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 0.25s;
+    
+}h1 span:nth-child(3)
+{
+    animation-delay: 0.50s;
+    
+}h1 span:nth-child(4)
+{
+    animation-delay: 0.75s;
+    
+}h1 span:nth-child(5)
+{
+    animation-delay: 1s;
+    
+}h1 span:nth-child(6)
+{
+    animation-delay: 1.25s;
+    
+}h1 span:nth-child(7)
+{
+    animation-delay: 1.50s;
+    
+}h1 span:nth-child(8)
+{
+    animation-delay: 1.75s;
+    
+}h1 span:nth-child(9)
+{
+    animation-delay: 2s;
+    
+} 
+
+.regis{
+
+   /* font-family: 'Big Shoulders Stencil Text',; */
+    font-size: 2rem;
+    padding: 2.2rem;
+    font-style: italic;
+    color: #00ffd5;
+    letter-spacing: .1rem;
+}
+
+
+/* Counter Section */
+.info{
+
+	font-family: 'Black Ops One', cursive;  
+
+    font-size: 3rem;
+}
+
+.countdownContainer{
+	position: fixed;
+    top: 72%;
+    left: 52%;
+    transform: translateX(-60%) translateY(0%);
+    text-align: center;
+    padding: .2rem;
+    color: darkgray
+} 
+.count{
+    margin: 4rem 0;
+}
+
+.countd{
+    display: inline-block;
+    width: 7.4rem;
+    height: 7.1rem;
+    border: .1rem solid;
+    margin: .2rem 1.3rem;
+    font-size: 1.2rem;
+    border-radius: 20%;
+    overflow: hidden;
+}
+.countd span{
+
+    display: block;
+    font-size: 2.6rem;
+   margin-top: 1.4rem;;
+}
+
+.line {
+    position: fixed;
+    top: 68%;
+    left: 10%;
+    transform: translateX(0%) translateY(0%);
+    margin: 1rem auto;
+    color: #00ffd5;
+    font-size: 4rem;
+	font-family: 'Black Ops One', cursive;  
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*Animation */
+
+.anim-typewriter {
+	animation: typewriter 4s steps(40) 1s 1 normal both,
+	blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+	from {
+		  width: 0;
+	}
+	to {
+		  width: 16em;
+	}
+}
+
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:538px){
+    html{
+        font-size: 35%;
+    }
+}
+
+@media(max-width:338px){
+    html{
+        font-size: 35%;
+    }
+}
